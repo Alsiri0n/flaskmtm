@@ -9,6 +9,7 @@ packages = [{include = "flaskmtm", from = "src"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 flask = "^2.2.2"
+psycopg2-binary = "^2.9.5"
 
 
 [tool.poetry.group.dev.dependencies]
