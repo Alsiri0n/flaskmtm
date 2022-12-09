@@ -18,6 +18,6 @@ def runner(app):
     return app.test_cli_runner()
 
 
-def test_request_index():
+def test_request_index(client):
     response = client.get("/")
-    assert 200 in response.data in response.status_code
+    assert 200 == response.status_code
